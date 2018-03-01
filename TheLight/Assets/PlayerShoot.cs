@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerShoot : NetworkBehaviour
 {
-    private const string PLAYER_TAG = "PLayer";
+    private const string PLAYER_TAG = "NetPLayer";
 
     public PlayerWeapon weapon;
 
