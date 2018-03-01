@@ -1,0 +1,40 @@
+Mono path[0] = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build1_Data/Managed'
+Mono path[1] = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build1_Data/Mono'
+Mono config path = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build1_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/David/Desktop/TheLight/TheLight/Builds/Build1_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55338
+Multi-casting "[IP] 192.168.0.13 [Port] 55338 [Flags] 2 [Guid] 1568164048 [EditorId] 4211094223 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-IIMR586) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55338]
+PlayerConnection already initialized - listening to [0.0.0.0:55338]
+Player data archive not found at `C:/Users/David/Desktop/TheLight/TheLight/Builds/Build1_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.4f1 (ac7086b8d112)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 860M (ID=0x1392)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   23.21.13.9077
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.270 seconds
+Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build1_Data\Managed\System.dll (this message is harmless)
+<RI> Initializing input.
+<RI> Input initialized.
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initialized touch support.
+UnloadTime: 1.976782 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 4cd8 -> priority: 1 
+  Thread -> id: 30d8 -> priority: 1 
+  Thread -> id: 4cf0 -> priority: 1 
+  Thread -> id: 1ae4 -> priority: 1 
