@@ -2,10 +2,10 @@ Mono path[0] = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data/Mana
 Mono path[1] = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data/Mono'
 Mono config path = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55485
-Multi-casting "[IP] 192.168.0.13 [Port] 55485 [Flags] 2 [Guid] 2238758003 [EditorId] 3928068246 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-IIMR586) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55485]
-PlayerConnection already initialized - listening to [0.0.0.0:55485]
+PlayerConnection initialized network socket : 0.0.0.0 55329
+Multi-casting "[IP] 192.168.0.13 [Port] 55329 [Flags] 2 [Guid] 1656464796 [EditorId] 1032702817 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-IIMR586) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55329]
+PlayerConnection already initialized - listening to [0.0.0.0:55329]
 Player data archive not found at `C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.4f1 (ac7086b8d112)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -25,32 +25,196 @@ Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\M
 Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.149 seconds
+- Completed reload, in  0.094 seconds
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 1.698841 ms
+UnloadTime: 1.717315 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 5de8 -> priority: 1 
-  Thread -> id: 3734 -> priority: 1 
-  Thread -> id: 4154 -> priority: 1 
-  Thread -> id: 5044 -> priority: 1 
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777} time {175769}, last rec time {173348} rtt {12} timeout {2000}
-ClientDisconnected due to error: Timeout
+  Thread -> id: 7494 -> priority: 1 
+  Thread -> id: 7be0 -> priority: 1 
+  Thread -> id: 2e6c -> priority: 1 
+  Thread -> id: 7d68 -> priority: 1 
+hitting Floor
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:LogError(Object)
-UnityEngine.Networking.NetworkManager:OnClientDisconnect(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:1134)
-UnityEngine.Networking.NetworkManager:OnClientDisconnectInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:964)
-UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:220)
-UnityEngine.Networking.NetworkConnection:InvokeHandlerNoData(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:202)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:771)
-UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
-UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
  
-(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 1134)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Untagged
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
+
+hitting Floor
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+PlayerShoot:Shoot() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:41)
+PlayerShoot:Update() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\PlayerShoot.cs:31)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/PlayerShoot.cs Line: 41)
 

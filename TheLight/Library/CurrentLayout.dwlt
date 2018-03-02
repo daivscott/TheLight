@@ -15,7 +15,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 8
     y: 51
-    width: 1164
+    width: 950
     height: 765
   m_ShowMode: 4
   m_Title: 
@@ -41,7 +41,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1164
+    width: 950
     height: 765
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -61,7 +61,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1164
+    width: 950
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -82,7 +82,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 745
-    width: 1164
+    width: 950
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -104,12 +104,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1164
+    width: 950
     height: 715
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 48
+  controlID: 2392
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -128,12 +128,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 851
+    width: 673
     height: 715
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 49
+  controlID: 2393
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,12 +152,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 851
+    width: 673
     height: 444
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 50
+  controlID: 2394
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,7 +174,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 286
+    width: 227
     height: 444
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
@@ -197,9 +197,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 286
+    x: 227
     y: 0
-    width: 565
+    width: 446
     height: 444
   m_MinSize: {x: 204, y: 221}
   m_MaxSize: {x: 4004, y: 4021}
@@ -226,7 +226,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 444
-    width: 851
+    width: 673
     height: 271
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
@@ -252,9 +252,9 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 851
+    x: 673
     y: 0
-    width: 313
+    width: 277
     height: 715
   m_MinSize: {x: 277, y: 71}
   m_MaxSize: {x: 4002, y: 4021}
@@ -286,9 +286,9 @@ MonoBehaviour:
   m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 296
+    x: 237
     y: 100
-    width: 561
+    width: 442
     height: 423
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -298,8 +298,8 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -280.5
-    m_HBaseRangeMax: 280.5
+    m_HBaseRangeMin: -221
+    m_HBaseRangeMax: 221
     m_VBaseRangeMin: -203
     m_VBaseRangeMax: 203
     m_HAllowExceedBaseRangeMin: 1
@@ -318,25 +318,25 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
-      width: 561
+      width: 442
       height: 406
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 280.5, y: 203}
+    m_Translation: {x: 221, y: 203}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -280.5
+      x: -221
       y: -203
-      width: 561
+      width: 442
       height: 406
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 561, y: 423}
+  m_LastWindowPixelSize: {x: 442, y: 423}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100
@@ -364,13 +364,13 @@ MonoBehaviour:
     serializedVersion: 2
     x: 8
     y: 100
-    width: 284
+    width: 225
     height: 423
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ace7ffff30e8ffff32e9ffffe6fbffff00000000
+    m_ExpandedIDs: c8faecff52fbecff64fcecff3a0eedffb814edff1e15edff3016edff762aedffdc2aedffde2bedff727beefff87beeff0a7deeffc47feeff7e80eeff9081eeffbc84eeff4285eeff6086eeff3602fdfff402fdff0604fdff7c1ffdffe21ffdfff420fdfff225fdff8c26fdffa027fdff9a2efdff342ffdff4630fdff6e33fdffd433fdffe634fdff5638fdfff038fdff023afdff3603feffa403feffb604feff9ea7feff3ea8feff50a9feff36f8feff9cf8feffaef9feffda1dffff401effff521fffff9c3affff4c3bffff6a3cffffe6fbffff00000000704d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -517,7 +517,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 8
     y: 544
-    width: 849
+    width: 671
     height: 250
   m_SearchFilter:
     m_NameFilter: 
@@ -539,7 +539,7 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\David\Desktop\TheLight\TheLight
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 85}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 0a250000
     m_LastClickedID: 9482
     m_ExpandedIDs: 000000000a2500003e250000d625000000ca9a3bffffff7f
@@ -570,7 +570,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000a2500003e250000d6250000
+    m_ExpandedIDs: 000000000a2500003e250000d625000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -598,7 +598,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000d225000000000000
+    m_ExpandedInstanceIDs: c6230000d225000000000000a0250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,9 +647,9 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 2
-    y: 550
-    width: 849
+    x: 8
+    y: 544
+    width: 671
     height: 250
 --- !u!114 &18
 MonoBehaviour:
@@ -744,9 +744,9 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 861
+    x: 683
     y: 100
-    width: 311
+    width: 275
     height: 694
   m_ScrollPosition: {x: 0, y: 0}
   m_InspectorMode: 0
