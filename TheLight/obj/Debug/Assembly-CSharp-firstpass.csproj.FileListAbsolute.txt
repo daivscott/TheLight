@@ -26,7 +26,6 @@ C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\nunit.framework.xml
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\UnityEngine.Analytics.xml
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\UnityEngine.HoloLens.xml
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\UnityEngine.VR.xml
-C:\Users\David\Desktop\TheLight\TheLight\obj\Debug\Assembly-CSharp-firstpass.csprojResolveAssemblyReference.cache
 C:\Users\David\Desktop\TheLight\TheLight\obj\Debug\Assembly-CSharp-firstpass.csproj.CoreCompileInputs.cache
 C:\Users\David\Desktop\TheLight\TheLight\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\David\Desktop\TheLight\TheLight\obj\Debug\Assembly-CSharp-firstpass.pdb
