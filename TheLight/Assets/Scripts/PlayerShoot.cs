@@ -1,9 +1,10 @@
-﻿using UnityEngine.Networking;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Networking;
+
 
 public class PlayerShoot : NetworkBehaviour
 {
-    private const string PLAYER_TAG = "NetPlayer";
+    private const string PLAYER_TAG = "Player";
 
     public PlayerWeapon weapon;
 
@@ -38,7 +39,7 @@ public class PlayerShoot : NetworkBehaviour
         RaycastHit _hit;
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
-            Debug.Log("hitting " + _hit.collider.tag);
+            //Debug.Log("hitting " + _hit.collider.tag);
             if (_hit.collider.tag == PLAYER_TAG)
             {
                 //Debug.Log("hitting2");

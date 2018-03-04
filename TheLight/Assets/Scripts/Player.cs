@@ -23,9 +23,10 @@ public class Player : NetworkBehaviour {
 
         Debug.Log(transform.name + " now has " + currrentHealth + " health.");
     }
-
+    
     public void SetDefaults()
     {
-        currrentHealth = maxHealth;
+        currrentHealth = maxHealth;        
     }
 }
+

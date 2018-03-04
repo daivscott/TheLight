@@ -30,6 +30,15 @@ public class PlayerSetup : NetworkBehaviour {
         }
     }
 
+    //public override void OnStartLocalPlayer()
+    //{
+    //    base.OnStartLocalPlayer();
+    //    this.tag = "Player";
+    //    this.GetComponent<Collider>().tag = "Player";
+    //    this.GetComponent<Player>().tag = "Player";
+    //    GetComponent<MeshRenderer>().material.color = Color.blue;
+    //}
+
     public override void OnStartClient()
     {
         base.OnStartClient();
