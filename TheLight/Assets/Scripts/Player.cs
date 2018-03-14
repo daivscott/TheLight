@@ -13,18 +13,18 @@ public class Player : NetworkBehaviour {
     }
 
     [SerializeField]
-    private int maxHealth = 100;
+    private float maxHealth = 100f;
 
     [SerializeField]
     [SyncVar]
-    private int currrentHealth;
+    private float currentHealth;
 
     [SerializeField]
-    private float healthRegenSpeed = 1f;
+    private float healthRegenSpeed = 10f;
 
     public float GetHealthPct()
     {
-        return (float)currrentHealth / maxHealth;
+        return (float)currentHealth / maxHealth;
     }
 
     [SerializeField]
@@ -52,12 +52,22 @@ public class Player : NetworkBehaviour {
 
         if(Input.GetKeyDown(KeyCode.K))
         {
-            RpcTakeDamage(999999);
+            RpcTakeDamage(50);
+        }
+
+        if(currentHealth < 0f)
+        {
+            currentHealth = 0f;
+        }
+
+        if (currentHealth < maxHealth && currentHealth > 0f)
+        {
+            currentHealth += healthRegenSpeed * Time.deltaTime;
         }
     }
 
     [ClientRpc]
-    public void RpcTakeDamage(int _amount)
+    public void RpcTakeDamage(float _amount)
     {
 
         if (_isDead)
@@ -65,11 +75,11 @@ public class Player : NetworkBehaviour {
             return;
         }
             
-        currrentHealth -= _amount;
+        currentHealth -= _amount;
 
-        Debug.Log(transform.name + " now has " + currrentHealth + " health.");
+        Debug.Log(transform.name + " now has " + currentHealth + " health.");
 
-        if(currrentHealth <= 0)
+        if(currentHealth <= 0)
         {
             Die();
         }
@@ -111,7 +121,7 @@ public class Player : NetworkBehaviour {
     {
         isDead = false;
 
-        currrentHealth = maxHealth;
+        currentHealth = maxHealth;
 
         for (int i = 0; i < disableOnDeath.Length; i++)
         {

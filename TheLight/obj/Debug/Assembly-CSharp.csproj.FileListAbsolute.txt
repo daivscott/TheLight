@@ -19,7 +19,6 @@ C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\Unity.UNetWeaver.dll
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\Unity.CecilTools.dll
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\Mono.Cecil.Pdb.dll
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\Mono.Cecil.Mdb.dll
-C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\Assembly-CSharp-firstpass.pdb
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\UnityEngine.xml
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\UnityEditor.xml
 C:\Users\David\Desktop\TheLight\TheLight\Temp\bin\Debug\UnityEngine.UI.xml

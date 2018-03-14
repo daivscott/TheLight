@@ -22,7 +22,7 @@ public class PlayerUI : MonoBehaviour {
 
     void SetHealthAmount(float _amount)
     {
-        healthBarFill.localScale = new Vector3(_amount, 1f, 1f);
+            healthBarFill.localScale = new Vector3(_amount, 1f, 1f);        
     }
 
 }

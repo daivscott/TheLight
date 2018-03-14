@@ -13,9 +13,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private float jumpForce = 1000f;
 
-    //[SerializeField]
-    //private float healthBarRegenSpeed = 1f;
-
+    
     [Header("Spring Settings")]
     //[SerializeField]
     //private JointDriveMode jointMode;
