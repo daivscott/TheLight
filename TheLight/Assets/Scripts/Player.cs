@@ -20,6 +20,14 @@ public class Player : NetworkBehaviour {
     private int currrentHealth;
 
     [SerializeField]
+    private float healthRegenSpeed = 1f;
+
+    public float GetHealthPct()
+    {
+        return (float)currrentHealth / maxHealth;
+    }
+
+    [SerializeField]
     private Behaviour[] disableOnDeath;
     private bool[] wasEnabled;
 
