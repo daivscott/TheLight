@@ -20,11 +20,20 @@ public class Player : NetworkBehaviour {
     private float currentHealth;
 
     [SerializeField]
+    [SyncVar]
+    private int currentLightCollected;
+
+    [SerializeField]
     private float healthRegenSpeed = 10f;
 
     public float GetHealthPct()
     {
         return (float)currentHealth / maxHealth;
+    }
+
+    public int GetCollectedLightAmount()
+    {
+        return currentLightCollected;
     }
 
     [SerializeField]
@@ -33,13 +42,14 @@ public class Player : NetworkBehaviour {
 
     public void Setup()
     {
+        // disable components on death
         wasEnabled = new bool[disableOnDeath.Length];
         for (int i = 0; i < wasEnabled.Length; i++)
         {
             wasEnabled[i] = disableOnDeath[i].enabled;
         }
 
-
+        // Reset settings to default
         SetDefaults();
     }
 
@@ -50,16 +60,19 @@ public class Player : NetworkBehaviour {
             return;
         }
 
+        // Test function to cause damage
         if(Input.GetKeyDown(KeyCode.K))
         {
             RpcTakeDamage(50);
         }
 
+        // Stop the health and health bar going beyond zero
         if(currentHealth < 0f)
         {
             currentHealth = 0f;
         }
 
+        // Regenerate Health
         if (currentHealth < maxHealth && currentHealth > 0f)
         {
             currentHealth += healthRegenSpeed * Time.deltaTime;
@@ -76,6 +89,8 @@ public class Player : NetworkBehaviour {
         }
             
         currentHealth -= _amount;
+
+        currentLightCollected += 1;
 
         Debug.Log(transform.name + " now has " + currentHealth + " health.");
 
@@ -122,6 +137,8 @@ public class Player : NetworkBehaviour {
         isDead = false;
 
         currentHealth = maxHealth;
+
+        currentLightCollected = 0;
 
         for (int i = 0; i < disableOnDeath.Length; i++)
         {
