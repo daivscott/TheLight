@@ -26,6 +26,11 @@ public class Player : NetworkBehaviour {
     [SerializeField]
     private float healthRegenSpeed = 10f;
 
+    private Vector3 deathLocation;
+
+    //[SyncVar]
+    public Transform Spawner;
+
     public float GetHealthPct()
     {
         return (float)currentHealth / maxHealth;
@@ -77,6 +82,7 @@ public class Player : NetworkBehaviour {
         {
             currentHealth += healthRegenSpeed * Time.deltaTime;
         }
+        Spawner.GetComponent<CircSpawner>().numObjects = currentLightCollected;
     }
 
     [ClientRpc]
@@ -96,6 +102,7 @@ public class Player : NetworkBehaviour {
 
         if(currentHealth <= 0)
         {
+            deathLocation = this.transform.position;
             Die();
         }
     }
@@ -115,6 +122,8 @@ public class Player : NetworkBehaviour {
             _col.enabled = false;
         }
 
+        Instantiate(Spawner, deathLocation, Quaternion.identity);
+        //Spawner.GetComponent<CircSpawner>().numObjects = currentLightCollected;
         Debug.Log(transform.name + " is Dead!");
 
         StartCoroutine(Respawn());
@@ -140,6 +149,8 @@ public class Player : NetworkBehaviour {
 
         currentLightCollected = 0;
 
+        Spawner.GetComponent<CircSpawner>().numObjects = 0;
+
         for (int i = 0; i < disableOnDeath.Length; i++)
         {
             disableOnDeath[i].enabled = wasEnabled[i];
@@ -149,6 +160,15 @@ public class Player : NetworkBehaviour {
         if(_col != null)
         {
             _col.enabled = true;
+        }
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pickup"))
+        {
+            other.gameObject.SetActive(false);
+            currentLightCollected = currentLightCollected + 1;
         }
     }
 }
