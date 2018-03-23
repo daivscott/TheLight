@@ -20,22 +20,27 @@ public class Player : NetworkBehaviour {
     private float currentHealth;
 
     [SerializeField]
-    [SyncVar]
+    //[SyncVar]
     private int currentLightCollected;
 
     [SerializeField]
     private float healthRegenSpeed = 10f;
 
+    [SyncVar]
     private Vector3 deathLocation;
 
+    [SerializeField]
     //[SyncVar]
-    public Transform Spawner;
+    private int numObjects;
+
+    public GameObject prefab;
 
     public float GetHealthPct()
     {
         return (float)currentHealth / maxHealth;
     }
 
+    
     public int GetCollectedLightAmount()
     {
         return currentLightCollected;
@@ -77,12 +82,26 @@ public class Player : NetworkBehaviour {
             currentHealth = 0f;
         }
 
-        // Regenerate Health
+        CmdRegenerateHealth();
+
+        CmdSetNumberOfObjectsToSpawn();
+
+
+    }
+
+    [Command]
+    void CmdSetNumberOfObjectsToSpawn()
+    {
+        numObjects = currentLightCollected;
+    }
+
+    [Command]
+    void CmdRegenerateHealth()
+    {
         if (currentHealth < maxHealth && currentHealth > 0f)
         {
             currentHealth += healthRegenSpeed * Time.deltaTime;
         }
-        Spawner.GetComponent<CircSpawner>().numObjects = currentLightCollected;
     }
 
     [ClientRpc]
@@ -96,7 +115,8 @@ public class Player : NetworkBehaviour {
             
         currentHealth -= _amount;
 
-        currentLightCollected += 1;
+        // update collected light on being shot
+        currentLightCollected = currentLightCollected + 1;
 
         Debug.Log(transform.name + " now has " + currentHealth + " health.");
 
@@ -122,12 +142,13 @@ public class Player : NetworkBehaviour {
             _col.enabled = false;
         }
 
-        Instantiate(Spawner, deathLocation, Quaternion.identity);
-        //Spawner.GetComponent<CircSpawner>().numObjects = currentLightCollected;
+        SpawnLight();
+        
         Debug.Log(transform.name + " is Dead!");
 
         StartCoroutine(Respawn());
     }
+
 
     IEnumerator Respawn()
     {
@@ -149,7 +170,7 @@ public class Player : NetworkBehaviour {
 
         currentLightCollected = 0;
 
-        Spawner.GetComponent<CircSpawner>().numObjects = 0;
+        numObjects = 0;
 
         for (int i = 0; i < disableOnDeath.Length; i++)
         {
@@ -163,13 +184,44 @@ public class Player : NetworkBehaviour {
         }
     }
 
+    
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Pickup"))
         {
             other.gameObject.SetActive(false);
+
+            // update collected light on collecting pickup 
             currentLightCollected = currentLightCollected + 1;
         }
+    }
+
+    
+    void SpawnLight()
+    {
+        Vector3 center = transform.position;
+        //Vector3 center = deathLocation;
+        for (int i = 0; i < numObjects; i++)
+        {
+
+            Vector3 pos = RandomCircle(center, 0.1f);
+            Quaternion rot = Quaternion.FromToRotation(Vector3.forward, center - pos);
+            GameObject spawnedLightPickup = Instantiate(prefab, pos, rot);
+            //GameObject spawnedLightPickup = Instantiate(prefab, deathLocation, Quaternion.identity);
+
+            NetworkServer.Spawn(spawnedLightPickup);
+        }
+    }
+
+
+    Vector3 RandomCircle(Vector3 center, float radius)
+    {
+        float ang = Random.value * 360;
+        Vector3 pos;
+        pos.x = center.x + radius * Mathf.Sin(ang * Mathf.Deg2Rad);
+        pos.y = center.y;
+        pos.z = center.z + radius * Mathf.Cos(ang * Mathf.Deg2Rad);
+        return pos;
     }
 }
 

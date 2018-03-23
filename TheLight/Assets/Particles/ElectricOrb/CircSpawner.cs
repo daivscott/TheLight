@@ -1,13 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class CircSpawner : MonoBehaviour {
+public class CircSpawner : NetworkBehaviour {
 
-    public int numObjects = 1;
+    public int numObjects;
     public GameObject prefab;
 
     void Start()
+    {
+        CmdSpawnLight();
+    }
+
+    //[Command]
+    void CmdSpawnLight()
     {
         Vector3 center = transform.position;
         for (int i = 0; i < numObjects; i++)
@@ -15,6 +22,8 @@ public class CircSpawner : MonoBehaviour {
             Vector3 pos = RandomCircle(center, 0.1f);
             Quaternion rot = Quaternion.FromToRotation(Vector3.forward, center - pos);
             Instantiate(prefab, pos, rot);
+
+            //NetworkServer.Spawn(prefab);
         }
     }
 
