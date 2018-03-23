@@ -2,10 +2,10 @@ Mono path[0] = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data/Mana
 Mono path[1] = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data/Mono'
 Mono config path = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55098
-Multi-casting "[IP] 192.168.0.7 [Port] 55098 [Flags] 2 [Guid] 782587276 [EditorId] 4210630826 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-IIMR586) [Debug] 0" to [225.0.0.222:54997]...
-Started listening to [0.0.0.0:55098]
-PlayerConnection already initialized - listening to [0.0.0.0:55098]
+PlayerConnection initialized network socket : 0.0.0.0 55435
+Multi-casting "[IP] 192.168.0.7 [Port] 55435 [Flags] 2 [Guid] 508213606 [EditorId] 2925836640 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-IIMR586) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55435]
+PlayerConnection already initialized - listening to [0.0.0.0:55435]
 Player data archive not found at `C:/Users/David/Desktop/TheLight/TheLight/Builds/Build2_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.4f1 (ac7086b8d112)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -25,19 +25,19 @@ Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\M
 Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-- Completed reload, in  0.175 seconds
+- Completed reload, in  0.089 seconds
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\Build2_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
-UnloadTime: 1.844588 ms
+UnloadTime: 2.181230 ms
 Setting up 4 worker threads for Enlighten.
-  Thread -> id: 840 -> priority: 1 
-  Thread -> id: cc8 -> priority: 1 
-  Thread -> id: 3a04 -> priority: 1 
-  Thread -> id: 3914 -> priority: 1 
+  Thread -> id: 2144 -> priority: 1 
+  Thread -> id: 187c -> priority: 1 
+  Thread -> id: c30 -> priority: 1 
+  Thread -> id: 3954 -> priority: 1 
 Player 2 now has 60 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
@@ -56,7 +56,7 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
-Player 2 now has 22.32606 health.
+Player 2 now has 22.48401 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -74,7 +74,7 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
-Player 2 now has -13.03724 health.
+Player 2 now has -14.03393 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -121,64 +121,86 @@ UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 162)
 
-Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777} time {59794}, last rec time {57647} rtt {11} timeout {2000}
-Attempt to send to not connected connection {1}
-UnityEngine.Networking.NetworkTransport:SendWrapper(Int32, Int32, Int32, Byte[], Int32, Byte&)
-UnityEngine.Networking.NetworkTransport:Send(Int32, Int32, Int32, Byte[], Int32, Byte&) (at C:\buildslave\unity\build\artifacts\generated\common\modules\UNET\UNETworkingBindings.gen.cs:762)
-UnityEngine.Networking.NetworkConnection:TransportSend(Byte[], Int32, Int32, Byte&) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:587)
-UnityEngine.Networking.ChannelPacket:SendToTransport(NetworkConnection, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelPacket.cs:43)
-UnityEngine.Networking.ChannelBuffer:SendInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:405)
-UnityEngine.Networking.ChannelBuffer:CheckInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:169)
-UnityEngine.Networking.NetworkConnection:FlushChannels() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:316)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:796)
-UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
-UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
-
-[C:/buildslave/unity/build/Runtime/Networking/UNETVirtualUserHost.cpp line 362] 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UNET/UNETworkingBindings.gen.cs Line: 762)
-
-Failed to send internal buffer channel:0 bytesToSend:20
+Player 1 now has 60 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:LogError(Object)
-UnityEngine.Networking.ChannelPacket:SendToTransport(NetworkConnection, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelPacket.cs:51)
-UnityEngine.Networking.ChannelBuffer:SendInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:405)
-UnityEngine.Networking.ChannelBuffer:CheckInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:169)
-UnityEngine.Networking.NetworkConnection:FlushChannels() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:316)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:796)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
 UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
 UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
-(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/ChannelPacket.cs Line: 51)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
-Send Error: WrongConnection channel:0 bytesToSend:20
+Player 1 now has 21.32533 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:LogError(Object)
-UnityEngine.Networking.ChannelPacket:SendToTransport(NetworkConnection, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelPacket.cs:69)
-UnityEngine.Networking.ChannelBuffer:SendInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:405)
-UnityEngine.Networking.ChannelBuffer:CheckInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:169)
-UnityEngine.Networking.NetworkConnection:FlushChannels() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:316)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:796)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
 UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
 UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
-(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/ChannelPacket.cs Line: 69)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
-ClientDisconnected due to error: Timeout
+Player 1 now has -16.35533 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:LogError(Object)
-UnityEngine.Networking.NetworkManager:OnClientDisconnect(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:1134)
-UnityEngine.Networking.NetworkManager:OnClientDisconnectInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:964)
-UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:220)
-UnityEngine.Networking.NetworkConnection:InvokeHandlerNoData(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:202)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:771)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
 UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
 UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
-(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 1134)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 1 is Dead!
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:Die() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:147)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:126)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 147)
+
+Player 1 respawned
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+<Respawn>c__Iterator0:MoveNext() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:162)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 162)
 

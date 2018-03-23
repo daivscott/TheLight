@@ -89,7 +89,7 @@ public class Player : NetworkBehaviour {
 
     }
 
-    [Command]
+    [Command(channel = 0)]
     void CmdSetNumberOfObjectsToSpawn()
     {
         numObjects = currentLightCollected;
@@ -189,7 +189,8 @@ public class Player : NetworkBehaviour {
     {
         if (other.gameObject.CompareTag("Pickup"))
         {
-            other.gameObject.SetActive(false);
+            //other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
 
             // update collected light on collecting pickup 
             currentLightCollected = currentLightCollected + 1;
@@ -199,17 +200,24 @@ public class Player : NetworkBehaviour {
     
     void SpawnLight()
     {
-        Vector3 center = transform.position;
-        //Vector3 center = deathLocation;
+        Vector3[] spawnPositions =  new Vector3[numObjects];
+        //Vector3 center = transform.position;
+        Vector3 center = deathLocation;
         for (int i = 0; i < numObjects; i++)
         {
 
-            Vector3 pos = RandomCircle(center, 0.1f);
-            Quaternion rot = Quaternion.FromToRotation(Vector3.forward, center - pos);
-            GameObject spawnedLightPickup = Instantiate(prefab, pos, rot);
+            Vector3 pos = RandomCircle(center, 2f);
+            //Quaternion rot = Quaternion.FromToRotation(Vector3.forward, center - pos);
+            //GameObject spawnedLightPickup = Instantiate(prefab, pos, rot);
             //GameObject spawnedLightPickup = Instantiate(prefab, deathLocation, Quaternion.identity);
 
+            //NetworkServer.Spawn(spawnedLightPickup);
+            //Vector3[] spawnPositions = new [] {new Vector3(0f, 0f, 0f)};
+            spawnPositions[i] = new Vector3  (pos.x, pos.y, pos.z);
+
+            GameObject spawnedLightPickup = Instantiate(prefab, spawnPositions[i], Quaternion.identity);
             NetworkServer.Spawn(spawnedLightPickup);
+
         }
     }
 
