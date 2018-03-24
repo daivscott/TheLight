@@ -14,7 +14,10 @@ public class PlayerShoot : NetworkBehaviour
     [SerializeField]
     private LayerMask mask;
 
-    
+    public GameObject ball;
+    public float speed = 50;
+
+
     void Start()
     {
         if (cam == null)
@@ -28,7 +31,6 @@ public class PlayerShoot : NetworkBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            //Debug.Log("Shooting");
             Shoot();
         }
     }
@@ -37,12 +39,14 @@ public class PlayerShoot : NetworkBehaviour
     void Shoot()
     {
         RaycastHit _hit;
+
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
-            //Debug.Log("hitting " + _hit.collider.tag);
+            GameObject newBall = Instantiate(ball, transform.position, transform.rotation) as GameObject;
+            newBall.GetComponent<Rigidbody>().velocity = (_hit.point - transform.position).normalized * speed;
+            //newBall.gameObject.GetComponent<BulletProperties>().endPoint = _hit.point;
             if (_hit.collider.tag == PLAYER_TAG)
             {
-                //Debug.Log("hitting2");
                 CmdPlayerShot(_hit.collider.name, weapon.damage);
             }
         }
