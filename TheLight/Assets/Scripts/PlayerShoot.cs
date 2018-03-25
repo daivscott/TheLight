@@ -29,10 +29,23 @@ public class PlayerShoot : NetworkBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if(weapon.fireRate <= 0f)
         {
-            Shoot();
+            if (Input.GetButtonDown("Fire1"))
+            {
+                Shoot();
+            }
+        } else
+        {
+            if(Input.GetButtonDown("Fire1"))
+            {
+                InvokeRepeating("Shoot", 0f, 1f / weapon.fireRate);
+            } else if (Input.GetButtonUp("Fire1"))
+            {
+                CancelInvoke("Shoot");
+            }
         }
+        
     }
 
     [Client]
@@ -44,7 +57,7 @@ public class PlayerShoot : NetworkBehaviour
         {
             GameObject newBall = Instantiate(ball, transform.position, transform.rotation) as GameObject;
             newBall.GetComponent<Rigidbody>().velocity = (_hit.point - transform.position).normalized * speed;
-            //newBall.gameObject.GetComponent<BulletProperties>().endPoint = _hit.point;
+            //newBall.gameObject.GetComponent<BulletProperties>().shooterName = GetComponent<Collider>().gameObject.name;
             if (_hit.collider.tag == PLAYER_TAG)
             {
                 CmdPlayerShot(_hit.collider.name, weapon.damage);

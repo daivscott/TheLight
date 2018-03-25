@@ -213,7 +213,7 @@ public class Player : NetworkBehaviour {
 
             //NetworkServer.Spawn(spawnedLightPickup);
             //Vector3[] spawnPositions = new [] {new Vector3(0f, 0f, 0f)};
-            spawnPositions[i] = new Vector3  (pos.x, pos.y, pos.z);
+            spawnPositions[i] = new Vector3  (pos.x, pos.y - 0.5f, pos.z);
 
             GameObject spawnedLightPickup = Instantiate(prefab, spawnPositions[i], Quaternion.identity);
             NetworkServer.Spawn(spawnedLightPickup);
