@@ -17,6 +17,8 @@ public class PlayerShoot : NetworkBehaviour
     public GameObject ball;
     public float speed = 50;
 
+    private Vector3 hitPoint;
+
 
     void Start()
     {
@@ -48,15 +50,43 @@ public class PlayerShoot : NetworkBehaviour
         
     }
 
+    // Called on server when player shoots
+    [Command]
+    void CmdOnShoot()
+    {
+        RpcShootEffect();
+    }
+
+    // Called on all clients to do shoot effects
+    [ClientRpc]
+    void RpcShootEffect()
+    {
+        //GetComponent<WeaponGraphics>().muzzleFlash.Play();
+        GameObject newBall = Instantiate(ball, transform.position, transform.rotation) as GameObject;
+        newBall.GetComponent<Rigidbody>().velocity = (hitPoint - transform.position).normalized * speed;
+    }
+
+
+
     [Client]
     void Shoot()
     {
+        if(!isLocalPlayer)
+        {
+            return;
+        }
+
+        
+
         RaycastHit _hit;
 
         if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
         {
-            GameObject newBall = Instantiate(ball, transform.position, transform.rotation) as GameObject;
-            newBall.GetComponent<Rigidbody>().velocity = (_hit.point - transform.position).normalized * speed;
+            hitPoint = _hit.point;
+            // We are shooting, call OnShoot method on server
+            CmdOnShoot();
+
+            
             //newBall.gameObject.GetComponent<BulletProperties>().shooterName = GetComponent<Collider>().gameObject.name;
             if (_hit.collider.tag == PLAYER_TAG)
             {
