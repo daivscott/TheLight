@@ -33,7 +33,7 @@ public class Player : NetworkBehaviour {
     //[SyncVar]
     private int numObjects;
 
-    public GameObject prefab;
+    public GameObject lightPrefab;
 
     public float GetHealthPct()
     {
@@ -207,15 +207,10 @@ public class Player : NetworkBehaviour {
         {
 
             Vector3 pos = RandomCircle(center, 2f);
-            //Quaternion rot = Quaternion.FromToRotation(Vector3.forward, center - pos);
-            //GameObject spawnedLightPickup = Instantiate(prefab, pos, rot);
-            //GameObject spawnedLightPickup = Instantiate(prefab, deathLocation, Quaternion.identity);
-
-            //NetworkServer.Spawn(spawnedLightPickup);
-            //Vector3[] spawnPositions = new [] {new Vector3(0f, 0f, 0f)};
+            
             spawnPositions[i] = new Vector3  (pos.x, pos.y - 0.5f, pos.z);
 
-            GameObject spawnedLightPickup = Instantiate(prefab, spawnPositions[i], Quaternion.identity);
+            GameObject spawnedLightPickup = Instantiate(lightPrefab, spawnPositions[i], Quaternion.identity);
             NetworkServer.Spawn(spawnedLightPickup);
 
         }
