@@ -35,6 +35,18 @@ public class PlayerController : MonoBehaviour {
     
     void Update()
     {
+        // setting target position for player to alow physics to work on other surfaces
+        RaycastHit _hit;
+        if(Physics.Raycast (transform.position, Vector3.down, out _hit, 100f))
+        {
+            // calculate new position from alternate surface 
+            joint.targetPosition = new Vector3(0f, -_hit.point.y, 0f);
+        } else
+        {
+            // assume the player has hit the ground level
+            joint.targetPosition = new Vector3(0f, 0f, 0f);
+        }
+
         //Calculate movement velocity as 3d vector
         float xMov = Input.GetAxisRaw("Horizontal");
         float zMov = Input.GetAxisRaw("Vertical");
