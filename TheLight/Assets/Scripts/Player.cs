@@ -131,17 +131,22 @@ public class Player : NetworkBehaviour {
     {
         isDead = true;
 
+        //Animator anim.SetTrigger("Die");
+
+        // Dissable components on death
         for (int i = 0; i < disableOnDeath.Length; i++)
         {
             disableOnDeath[i].enabled = false;
         }
 
+        // Disable the colllider
         Collider _col = GetComponent<Collider>();
         if (_col != null)
         {
             _col.enabled = false;
         }
-
+        
+        // Spawn collected light particles from dead player
         SpawnLight();
         
         Debug.Log(transform.name + " is Dead!");

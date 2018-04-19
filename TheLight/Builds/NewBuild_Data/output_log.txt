@@ -3,6 +3,12 @@ Mono path[1] = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/NewBuild_Data/Mo
 Mono config path = 'C:/Users/David/Desktop/TheLight/TheLight/Builds/NewBuild_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/David/Desktop/TheLight/TheLight/Builds/NewBuild_Data (debug = 0)
 <<<<<<< HEAD
+PlayerConnection initialized network socket : 0.0.0.0 55210
+Multi-casting "[IP] 192.168.0.7 [Port] 55210 [Flags] 2 [Guid] 456777842 [EditorId] 1618196100 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-IIMR586) [Debug] 0" to [225.0.0.222:54997]...
+Started listening to [0.0.0.0:55210]
+PlayerConnection already initialized - listening to [0.0.0.0:55210]
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 PlayerConnection initialized network socket : 0.0.0.0 55285
 Multi-casting "[IP] 192.168.0.7 [Port] 55285 [Flags] 2 [Guid] 3154117078 [EditorId] 3306112042 [Version] 1048832 [Id] WindowsPlayer(DESKTOP-IIMR586) [Debug] 0" to [225.0.0.222:54997]...
@@ -19,6 +25,7 @@ PlayerConnection already initialized - listening to [0.0.0.0:55245]
 >>>>>>> 670d32768f6561f0466f132fdb6fe0c624276152
 =======
 >>>>>>> 670d32768f6561f0466f132fdb6fe0c624276152
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 Player data archive not found at `C:/Users/David/Desktop/TheLight/TheLight/Builds/NewBuild_Data/data.unity3d`, using local filesystemInitialize engine version: 5.6.4f1 (ac7086b8d112)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -39,6 +46,9 @@ Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\NewBuild_Data\Managed\Un
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\NewBuild_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\NewBuild_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 <<<<<<< HEAD
+- Completed reload, in  0.302 seconds
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 - Completed reload, in  0.121 seconds
 =======
@@ -47,12 +57,22 @@ Loading C:\Users\David\Desktop\TheLight\TheLight\Builds\NewBuild_Data\Managed\Un
 =======
 - Completed reload, in  0.172 seconds
 >>>>>>> 670d32768f6561f0466f132fdb6fe0c624276152
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\NewBuild_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\David\Desktop\TheLight\TheLight\Builds\NewBuild_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initialized touch support.
+<<<<<<< HEAD
+UnloadTime: 1.799015 ms
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 9ec -> priority: 1 
+  Thread -> id: 378 -> priority: 1 
+  Thread -> id: 4a80 -> priority: 1 
+  Thread -> id: 28b8 -> priority: 1 
+Player 2 now has 95 health.
+=======
 <<<<<<< HEAD
 <<<<<<< HEAD
 UnloadTime: 1.482073 ms
@@ -62,6 +82,7 @@ Setting up 4 worker threads for Enlighten.
   Thread -> id: 21a0 -> priority: 1 
   Thread -> id: 6e08 -> priority: 1 
 Player 2 now has 90 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -79,7 +100,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 94.64949 health.
+=======
 Player 2 now has 90.00831 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -97,7 +122,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 91.97161 health.
+=======
 Player 2 now has 83.64729 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -115,7 +144,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 89.28824 health.
+=======
 Player 2 now has 75.96664 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -133,7 +166,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 91.24612 health.
+=======
 Player 2 now has 68.28742 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -151,7 +188,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 90.99043 health.
+=======
 Player 2 now has 60.44074 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -169,7 +210,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 88.31467 health.
+=======
 Player 2 now has 51.6017 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -187,7 +232,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 85.6293 health.
+=======
 Player 2 now has 43.91912 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -205,7 +254,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 82.94843 health.
+=======
 Player 2 now has 36.07228 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -223,7 +276,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 81.43279 health.
+=======
 Player 2 now has 28.39179 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -241,7 +298,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 78.74891 health.
+=======
 Player 2 now has 19.5518 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -259,7 +320,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 76.06825 health.
+=======
 Player 2 now has 11.87063 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -277,7 +342,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 72.22971 health.
+=======
 Player 2 now has 4.190095 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -295,7 +364,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 69.54723 health.
+=======
 Player 2 now has -3.487816 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -313,6 +386,9 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 66.8669 health.
+=======
 Player 2 is Dead!
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
@@ -732,6 +808,7 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
 Player 3 now has 41.93765 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -749,7 +826,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 65.34553 health.
+=======
 Player 3 now has 34.42512 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -767,7 +848,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 62.66544 health.
+=======
 Player 3 now has 26.41158 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -785,7 +870,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 59.98686 health.
+=======
 Player 3 now has 19.22763 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -803,7 +892,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 57.30624 health.
+=======
 Player 3 now has 10.88404 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -821,7 +914,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 54.62557 health.
+=======
 Player 3 now has 14.80112 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -839,7 +936,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 51.9452 health.
+=======
 Player 3 now has 7.120466 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -857,7 +958,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 49.26431 health.
+=======
 Player 3 now has -1.554202 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -874,6 +979,8 @@ UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\bui
 UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+<<<<<<< HEAD
+=======
 
 Player 3 is Dead!
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
@@ -903,8 +1010,9 @@ UnityEngine.Debug:Log(Object)
 UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 162)
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 
-Player 3 now has 90 health.
+Player 2 now has 46.58363 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -922,7 +1030,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 43.903 health.
+=======
 Player 3 now has 82.47949 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -940,7 +1052,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 46.94281 health.
+=======
 Player 3 now has 76.12586 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -958,7 +1074,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 45.25623 health.
+=======
 Player 3 now has 68.27628 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -976,7 +1096,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 41.42247 health.
+=======
 Player 3 now has 60.59554 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -994,7 +1118,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 39.8949 health.
+=======
 Player 3 now has 52.91498 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -1012,7 +1140,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 39.53432 health.
+=======
 Player 3 now has 45.29617 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -1030,7 +1162,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 36.85365 health.
+=======
 Player 3 now has 37.45926 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -1048,7 +1184,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 34.18071 health.
+=======
 Player 3 now has 28.61639 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -1066,7 +1206,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 32.66458 health.
+=======
 Player 3 now has 21.6134 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -1084,7 +1228,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 29.98026 health.
+=======
 Player 3 now has 13.27186 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -1102,7 +1250,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 44.69373 health.
+=======
 Player 3 now has 5.921865 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -1120,7 +1272,11 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+<<<<<<< HEAD
+Player 2 now has 40.85455 health.
+=======
 Player 3 now has -2.084256 health.
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
@@ -1138,13 +1294,12 @@ UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unit
  
 (Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
-Player 3 is Dead!
+Player 2 now has 38.17641 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
-Player:Die() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:147)
-Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:126)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
 Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
 UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
 UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
@@ -1155,18 +1310,221 @@ UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Exte
 UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
 UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
-(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 147)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
-Player 3 respawned
+Player 2 now has 35.49679 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
 UnityEngine.Debug:Log(Object)
-<Respawn>c__Iterator0:MoveNext() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:162)
-UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
-(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 162)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
+Player 2 now has 36.29013 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 33.60944 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 29.74786 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 27.06998 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 24.39617 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 21.71315 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 17.87373 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 15.1437 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 12.30432 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has 9.619724 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+<<<<<<< HEAD
+Player 2 now has 6.936036 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+=======
 Log: connection {1} has been disconnected by timeout; address {::ffff:127.0.0.1:7777} time {148385}, last rec time {146178} rtt {0} timeout {2000}
 Attempt to send to not connected connection {1}
 UnityEngine.Networking.NetworkTransport:SendWrapper(Int32, Int32, Int32, Byte[], Int32, Byte&)
@@ -1177,56 +1535,94 @@ UnityEngine.Networking.ChannelBuffer:SendInternalBuffer() (at C:\buildslave\unit
 UnityEngine.Networking.ChannelBuffer:CheckInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:169)
 UnityEngine.Networking.NetworkConnection:FlushChannels() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:316)
 UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:796)
-UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
-UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
-
-[C:/buildslave/unity/build/Runtime/Networking/UNETVirtualUserHost.cpp line 362] 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/modules/UNET/UNETworkingBindings.gen.cs Line: 762)
-
-Failed to send internal buffer channel:0 bytesToSend:20
-UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
-UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
-UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:LogError(Object)
-UnityEngine.Networking.ChannelPacket:SendToTransport(NetworkConnection, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelPacket.cs:51)
-UnityEngine.Networking.ChannelBuffer:SendInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:405)
-UnityEngine.Networking.ChannelBuffer:CheckInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:169)
-UnityEngine.Networking.NetworkConnection:FlushChannels() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:316)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:796)
+>>>>>>> 14219fcf63ee331b1e95450f58f8012072d1f145
 UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
 UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
-(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/ChannelPacket.cs Line: 51)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
-Send Error: WrongConnection channel:0 bytesToSend:20
+Player 2 now has 4.259825 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:LogError(Object)
-UnityEngine.Networking.ChannelPacket:SendToTransport(NetworkConnection, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelPacket.cs:69)
-UnityEngine.Networking.ChannelBuffer:SendInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:405)
-UnityEngine.Networking.ChannelBuffer:CheckInternalBuffer() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ChannelBuffer.cs:169)
-UnityEngine.Networking.NetworkConnection:FlushChannels() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:316)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:796)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
 UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
 UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
-(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/ChannelPacket.cs Line: 69)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
 
-ClientDisconnected due to error: Timeout
+Player 2 now has 0.4219518 health.
 UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
 UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
 UnityEngine.Logger:Log(LogType, Object)
-UnityEngine.Debug:LogError(Object)
-UnityEngine.Networking.NetworkManager:OnClientDisconnect(NetworkConnection) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:1134)
-UnityEngine.Networking.NetworkManager:OnClientDisconnectInternal(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkManager.cs:964)
-UnityEngine.Networking.NetworkConnection:InvokeHandler(Int16, NetworkReader, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:220)
-UnityEngine.Networking.NetworkConnection:InvokeHandlerNoData(Int16) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:202)
-UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:771)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
 UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
 UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
  
-(Filename: C:/buildslave/unity/build/Extensions/Networking/Runtime/NetworkManager.cs Line: 1134)
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 now has -2.258731 health.
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:121)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 121)
+
+Player 2 is Dead!
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+Player:Die() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:152)
+Player:RpcTakeDamage(Single) (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:126)
+Player:InvokeRpcRpcTakeDamage(NetworkBehaviour, NetworkReader)
+UnityEngine.Networking.NetworkIdentity:HandleRPC(Int32, NetworkReader) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:660)
+UnityEngine.Networking.ClientScene:OnRPCMessage(NetworkMessage) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\ClientScene.cs:739)
+UnityEngine.Networking.NetworkConnection:HandleReader(NetworkReader, Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:469)
+UnityEngine.Networking.NetworkConnection:HandleBytes(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:425)
+UnityEngine.Networking.NetworkConnection:TransportReceive(Byte[], Int32, Int32) (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkConnection.cs:576)
+UnityEngine.Networking.NetworkClient:Update() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:753)
+UnityEngine.Networking.NetworkClient:UpdateClients() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkClient.cs:965)
+UnityEngine.Networking.NetworkIdentity:UNetStaticUpdate() (at C:\buildslave\unity\build\Extensions\Networking\Runtime\NetworkIdentity.cs:1091)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 152)
+
+Player 2 respawned
+UnityEngine.DebugLogHandler:Internal_Log(LogType, String, Object)
+UnityEngine.DebugLogHandler:LogFormat(LogType, Object, String, Object[])
+UnityEngine.Logger:Log(LogType, Object)
+UnityEngine.Debug:Log(Object)
+<Respawn>c__Iterator0:MoveNext() (at C:\Users\David\Desktop\TheLight\TheLight\Assets\Scripts\Player.cs:167)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr) (at C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:17)
+ 
+(Filename: C:/Users/David/Desktop/TheLight/TheLight/Assets/Scripts/Player.cs Line: 167)
 
 =======
 UnloadTime: 2.716998 ms

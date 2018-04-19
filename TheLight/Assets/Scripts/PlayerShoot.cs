@@ -1,20 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 
-
+[RequireComponent (typeof (WeaponManager))]
 public class PlayerShoot : NetworkBehaviour
 {
     private const string PLAYER_TAG = "Player";
-
-    [SerializeField]
-    private PlayerWeapon weapon;
-
-    [SerializeField]
-    private GameObject weaponGFX;
-
-    [SerializeField]
-    private string weaponLayerName = "Weapon";
-
+    
     [SerializeField]
     private Camera cam;
 
@@ -22,9 +13,13 @@ public class PlayerShoot : NetworkBehaviour
     private LayerMask mask;
 
     public GameObject ball;
+    
     public float speed = 50;
 
     private Vector3 hitPoint;
+
+    private PlayerWeapon currentWeapon;
+    private WeaponManager weaponManager;
 
 
     void Start()
@@ -34,12 +29,16 @@ public class PlayerShoot : NetworkBehaviour
             Debug.LogError("PlayerShoot: No Camera referenced");
             this.enabled = false;
         }
-        weaponGFX.layer = LayerMask.NameToLayer(weaponLayerName);
+
+        weaponManager = GetComponent<WeaponManager>();
+
     }
 
     void Update()
     {
-        if(weapon.fireRate <= 0f)
+        currentWeapon = weaponManager.GetCurrentWeapon(); 
+
+        if(currentWeapon.fireRate <= 0f)
         {
             if (Input.GetButtonDown("Fire1"))
             {
@@ -49,7 +48,7 @@ public class PlayerShoot : NetworkBehaviour
         {
             if(Input.GetButtonDown("Fire1"))
             {
-                InvokeRepeating("Shoot", 0f, 1f / weapon.fireRate);
+                InvokeRepeating("Shoot", 0f, 1f / currentWeapon.fireRate);
             } else if (Input.GetButtonUp("Fire1"))
             {
                 CancelInvoke("Shoot");
@@ -59,9 +58,10 @@ public class PlayerShoot : NetworkBehaviour
     }
 
     // Called on server when player shoots
-    [Command]
+    [Command(channel = 0)]
     void CmdOnShoot()
     {
+        
         RpcShootEffect();
     }
 
@@ -69,11 +69,36 @@ public class PlayerShoot : NetworkBehaviour
     [ClientRpc]
     void RpcShootEffect()
     {
-        //GetComponent<WeaponGraphics>().muzzleFlash.Play();
-        GameObject newBall = Instantiate(ball, transform.position, transform.rotation) as GameObject;
+
+        weaponManager.GetCurrentGraphics().muzzleFlash.Play();
+        Vector3 bulletOrigin = weaponManager.GetCurrentGraphics().muzzleFlash.transform.position;
+        Vector3 bulletNormal = weaponManager.GetCurrentGraphics().muzzleFlash.transform.rotation.eulerAngles;
+        GameObject newBall = (GameObject)Instantiate(ball, bulletOrigin, Quaternion.LookRotation(bulletNormal));
         newBall.GetComponent<Rigidbody>().velocity = (hitPoint - transform.position).normalized * speed;
+        //// Creates a bullet particle to run along thr ray trace linne 
+        ////GameObject newBall = Instantiate(ball, transform.position, transform.rotation) as GameObject;
+        //GameObject newBall = (GameObject)Instantiate(ball, transform.position, transform.rotation);
+        //newBall.GetComponent<Rigidbody>().velocity = (hitPoint - transform.position).normalized * speed;
+        Destroy(newBall, 10f);
     }
 
+    //Called when somehing is hit and takes hit point and normal of the surface
+    [Command]
+    void CmdOnHit(Vector3 _pos, Vector3 _normal)
+    {
+        RpcHitEffect(_pos, _normal);
+    }
+
+    // Called on all clients to spawn in hit effects
+    [ClientRpc]
+    void RpcHitEffect(Vector3 _pos, Vector3 _normal)
+    {
+        GameObject _hitEffect = (GameObject)Instantiate(weaponManager.GetCurrentGraphics().hitEffectPrefab, _pos, Quaternion.LookRotation(_normal));
+        //Destroys the hit effect after stated time to stop the scene cluttering up
+        Destroy(_hitEffect, 2f);
+    }
+    
+    
 
 
     [Client]
@@ -83,23 +108,27 @@ public class PlayerShoot : NetworkBehaviour
         {
             return;
         }
+       // Debug.Log("shootPart");
 
         
 
         RaycastHit _hit;
 
-        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, weapon.range, mask))
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out _hit, currentWeapon.range, mask))
         {
             hitPoint = _hit.point;
+
             // We are shooting, call OnShoot method on server
             CmdOnShoot();
 
-            
             //newBall.gameObject.GetComponent<BulletProperties>().shooterName = GetComponent<Collider>().gameObject.name;
             if (_hit.collider.tag == PLAYER_TAG)
             {
-                CmdPlayerShot(_hit.collider.name, weapon.damage);
+                CmdPlayerShot(_hit.collider.name, currentWeapon.damage);
             }
+
+            //If something is hit call the OnHit method on the server
+            CmdOnHit(_hit.point, _hit.normal);
         }
     }
 
