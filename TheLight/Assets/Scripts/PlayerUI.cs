@@ -9,6 +9,9 @@ public class PlayerUI : MonoBehaviour {
     [SerializeField]
     Text collectedLightAmountText;
 
+    [SerializeField]
+    GameObject pauseMenu;
+
     private Player player;
     private PlayerController controller;
 
@@ -18,10 +21,26 @@ public class PlayerUI : MonoBehaviour {
         controller = player.GetComponent<PlayerController>();
     }
 
+    void Start()
+    {
+        PauseMenu.isOn = false;
+    }
+
     void Update()
     {
         SetHealthAmount(player.GetHealthPct());
         SetCollectedLightAmount(player.GetCollectedLightAmount());
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePauseMenu();
+        }
+    }
+
+    public void TogglePauseMenu()
+    {
+        pauseMenu.SetActive(!pauseMenu.activeSelf);
+        PauseMenu.isOn = pauseMenu.activeSelf;
     }
 
     void SetHealthAmount(float _amount)

@@ -35,6 +35,23 @@ public class PlayerController : MonoBehaviour {
     
     void Update()
     {
+        if (PauseMenu.isOn)
+        {
+            if (Cursor.lockState != CursorLockMode.None)
+                Cursor.lockState = CursorLockMode.None;
+
+            motor.Move(Vector3.zero);
+            motor.Rotate(Vector3.zero);
+
+            return;
+        }
+            
+
+        if (Cursor.lockState != CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         // setting target position for player to alow physics to work on other surfaces
         RaycastHit _hit;
         if(Physics.Raycast (transform.position, Vector3.down, out _hit, 100f))
