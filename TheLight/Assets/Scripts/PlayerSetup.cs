@@ -1,6 +1,7 @@
 ﻿
 using UnityEngine;
 using UnityEngine.Networking;
+using UnityEngine.Rendering; //for skinned mesh render options
 
 [RequireComponent(typeof(Player))]
 [RequireComponent(typeof(PlayerController))]
@@ -15,6 +16,11 @@ public class PlayerSetup : NetworkBehaviour {
     [SerializeField]
     GameObject playerUIPrefab;
     private GameObject playerUIInstance;
+
+    [SerializeField]
+    private SkinnedMeshRenderer skinned; // cast shadows only for skinned mesh
+    [SerializeField]
+    private SkinnedMeshRenderer skinned2; // cast shadows only for skinned mesh
 
     Camera sceneCamera;
 
@@ -42,9 +48,19 @@ public class PlayerSetup : NetworkBehaviour {
             if (ui == null)
                 Debug.LogError("No PlayerUI component on PlayerUI prefab");
             ui.SetPlayer(GetComponent<Player>());
+
+            skinned.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
+            skinned2.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
+
         }
 
         GetComponent<Player>().Setup();
+        GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
+    }
+
+    public override void PreStartClient()
+    {
+        GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
     }
 
     //public override void OnStartLocalPlayer()
