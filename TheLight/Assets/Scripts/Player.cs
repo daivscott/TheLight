@@ -5,6 +5,12 @@ using System.Collections;
 [RequireComponent(typeof(PlayerSetup))]
 public class Player : NetworkBehaviour {
 
+    public AudioSource audioSource;
+    public AudioClip pickupCollected;
+
+    public AudioSource audioSource2;
+    public AudioClip uploadLightClip;
+
     [SyncVar]
     private bool _isDead = false;
     public bool isDead
@@ -20,9 +26,16 @@ public class Player : NetworkBehaviour {
     [SyncVar]
     private float currentHealth;
 
+    // Kills and light that are synced to the network
+    public int kills;
+    public int lightStored;
+
+    // Kills and light that are stored in the session
+    public int sessionKills;
+    public int sessionStoredLight;
+
     [SerializeField]
-    //[SyncVar]
-    private int currentLightCollected;
+    public int currentLightCollected;
 
     [SerializeField]
     private float healthRegenSpeed = 10f;
@@ -31,7 +44,6 @@ public class Player : NetworkBehaviour {
     private Vector3 deathLocation;
 
     [SerializeField]
-    //[SyncVar]
     private int numObjects;
 
     [SerializeField]
@@ -54,10 +66,11 @@ public class Player : NetworkBehaviour {
 
     //public Animator anim;
 
-    //void Start()
-    //{
-    //    anim = GetComponent<Animator>();
-    //}
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource2 = GetComponent<AudioSource>();
+    }
 
     public float GetHealthPct()
     {
@@ -68,6 +81,15 @@ public class Player : NetworkBehaviour {
     public int GetCollectedLightAmount()
     {
         return currentLightCollected;
+    }
+
+    public int GetSessionKillsAmount()
+    {
+        return sessionKills;
+    }
+    public int GetSessionStoredLightAmount()
+    {
+        return sessionStoredLight;
     }
 
 
@@ -119,7 +141,7 @@ public class Player : NetworkBehaviour {
         // Test function to cause damage
         if(Input.GetKeyDown(KeyCode.K))
         {
-            RpcTakeDamage(50);
+            RpcTakeDamage(50, transform.name);
         }
 
         // Stop the health and health bar going beyond zero
@@ -131,9 +153,11 @@ public class Player : NetworkBehaviour {
         CmdRegenerateHealth();
 
         CmdSetNumberOfObjectsToSpawn();
-
-
     }
+
+
+
+    
 
     [Command(channel = 0)]
     void CmdSetNumberOfObjectsToSpawn()
@@ -151,7 +175,7 @@ public class Player : NetworkBehaviour {
     }
 
     [ClientRpc]
-    public void RpcTakeDamage(float _amount)
+    public void RpcTakeDamage(float _amount, string _sourceID)
     {
 
         if (_isDead)
@@ -168,14 +192,23 @@ public class Player : NetworkBehaviour {
 
         if(currentHealth <= 0)
         {
+             
             deathLocation = this.transform.position;
-            Die();
+            Die(_sourceID);
         }
     }
 
-    private void Die()
+    private void Die(string _sourceID)
     {
         isDead = true;
+
+        Player sourcePlayer = GameManager.GetPlayer(_sourceID);
+
+        if (sourcePlayer != null)
+        {
+            sourcePlayer.kills++;
+            sourcePlayer.sessionKills++;
+        }
 
         //anim.SetTrigger("Die");
 
@@ -276,8 +309,20 @@ public class Player : NetworkBehaviour {
             //other.gameObject.SetActive(false);
             Destroy(other.gameObject);
 
+            audioSource.PlayOneShot(pickupCollected, 0.7f);
+
             // update collected light on collecting pickup 
             currentLightCollected = currentLightCollected + 1;
+        }
+        if(other.gameObject.CompareTag("UploadCube"))
+        {
+            if (currentLightCollected != 0)
+            {
+                audioSource2.PlayOneShot(pickupCollected, 0.7f);
+                lightStored = lightStored + currentLightCollected;
+                sessionStoredLight = sessionStoredLight + currentLightCollected;
+            }
+            currentLightCollected = 0;
         }
     }
 

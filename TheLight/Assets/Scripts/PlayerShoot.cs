@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 
+
+
 [RequireComponent (typeof (WeaponManager))]
 public class PlayerShoot : NetworkBehaviour
 {
+    public AudioClip gunshot;
+    public AudioSource audioSource;
+
     private const string PLAYER_TAG = "Player";
     
     [SerializeField]
@@ -28,6 +33,7 @@ public class PlayerShoot : NetworkBehaviour
         {  
             Debug.LogError("PlayerShoot: No Camera referenced");
             this.enabled = false;
+            audioSource = GetComponent<AudioSource>();  
         }
 
         weaponManager = GetComponent<WeaponManager>();
@@ -72,10 +78,13 @@ public class PlayerShoot : NetworkBehaviour
     [ClientRpc]
     void RpcShootEffect()
     {
-
+        audioSource.PlayOneShot(gunshot, 0.7f);
         weaponManager.GetCurrentGraphics().muzzleFlash.Play();
-        Vector3 bulletOrigin = weaponManager.GetCurrentGraphics().muzzleFlash.transform.position;
-        Vector3 bulletNormal = weaponManager.GetCurrentGraphics().muzzleFlash.transform.rotation.eulerAngles;
+        //weaponManager.GetComponent<WeaponGraphics>().firePoint.transform.position;
+        Vector3 bulletOrigin = weaponManager.GetCurrentGraphics().firePoint.transform.position;
+        Vector3 bulletNormal = weaponManager.GetCurrentGraphics().firePoint.transform.rotation.eulerAngles;
+        //Vector3 bulletOrigin = weaponManager.GetCurrentGraphics().muzzleFlash.transform.position;
+        //Vector3 bulletNormal = weaponManager.GetCurrentGraphics().muzzleFlash.transform.rotation.eulerAngles;
         GameObject newBall = (GameObject)Instantiate(ball, bulletOrigin, Quaternion.LookRotation(bulletNormal));
         newBall.GetComponent<Rigidbody>().velocity = (hitPoint - transform.position).normalized * speed;
         //// Creates a bullet particle to run along thr ray trace linne 
@@ -89,16 +98,16 @@ public class PlayerShoot : NetworkBehaviour
     [Command]
     void CmdOnHit(Vector3 _pos, Vector3 _normal)
     {
-        RpcHitEffect(_pos, _normal);
+        //RpcHitEffect(_pos, _normal);
     }
 
     // Called on all clients to spawn in hit effects
     [ClientRpc]
     void RpcHitEffect(Vector3 _pos, Vector3 _normal)
     {
-        GameObject _hitEffect = (GameObject)Instantiate(weaponManager.GetCurrentGraphics().hitEffectPrefab, _pos, Quaternion.LookRotation(_normal));
+        //GameObject _hitEffect = (GameObject)Instantiate(weaponManager.GetCurrentGraphics().hitEffectPrefab, _pos, Quaternion.LookRotation(_normal));
         //Destroys the hit effect after stated time to stop the scene cluttering up
-        Destroy(_hitEffect, 2f);
+        //Destroy(_hitEffect, 2f);
     }
     
     
@@ -127,7 +136,7 @@ public class PlayerShoot : NetworkBehaviour
             //newBall.gameObject.GetComponent<BulletProperties>().shooterName = GetComponent<Collider>().gameObject.name;
             if (_hit.collider.tag == PLAYER_TAG)
             {
-                CmdPlayerShot(_hit.collider.name, currentWeapon.damage);
+                CmdPlayerShot(_hit.collider.name, currentWeapon.damage, transform.name);
             }
 
             //If something is hit call the OnHit method on the server
@@ -136,11 +145,11 @@ public class PlayerShoot : NetworkBehaviour
     }
 
     [Command]
-    void CmdPlayerShot (string _playerID, int _damage)
+    void CmdPlayerShot (string _playerID, int _damage, string _sourceID)
     {
         Debug.Log(_playerID + " has been shot.");
 
         Player _player = GameManager.GetPlayer(_playerID);
-        _player.RpcTakeDamage(_damage);
+        _player.RpcTakeDamage(_damage, _sourceID);
     }
 }

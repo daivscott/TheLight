@@ -10,6 +10,12 @@ public class PlayerUI : MonoBehaviour {
     Text collectedLightAmountText;
 
     [SerializeField]
+    Text sessionKillsText;
+
+    [SerializeField]
+    Text sessionStoredLightText;
+
+    [SerializeField]
     GameObject pauseMenu;
 
     private Player player;
@@ -30,6 +36,8 @@ public class PlayerUI : MonoBehaviour {
     {
         SetHealthAmount(player.GetHealthPct());
         SetCollectedLightAmount(player.GetCollectedLightAmount());
+        SetSessionKillsAmount(player.GetSessionKillsAmount());
+        SetSessionStoredLightAmount(player.GetSessionStoredLightAmount());
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -51,6 +59,16 @@ public class PlayerUI : MonoBehaviour {
     void SetCollectedLightAmount(int _amount)
     {
         collectedLightAmountText.text = _amount.ToString();
+    }
+
+    void SetSessionKillsAmount(int _amount)
+    {
+        sessionKillsText.text = _amount.ToString();
+    }
+
+    void SetSessionStoredLightAmount(int _amount)
+    {
+        sessionStoredLightText.text = _amount.ToString();
     }
 
 }
