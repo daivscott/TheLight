@@ -157,29 +157,7 @@ ModelImporter:
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
-    extraExposedTransformPaths:
-    - root/Hips
-    - root/Hips/Spine
-    - root/Hips/Spine/Chest
-    - root/Hips/Spine/Chest/Upper_Chest
-    - root/Hips/Spine/Chest/Upper_Chest/Neck
-    - root/Hips/Spine/Chest/Upper_Chest/Neck/Head
-    - root/Hips/Spine/Chest/Upper_Chest/Shoulder
-    - root/Hips/Spine/Chest/Upper_Chest/Shoulder1
-    - root/Hips/Spine/Chest/Upper_Chest/Shoulder/Upper_Arm
-    - root/Hips/Spine/Chest/Upper_Chest/Shoulder/Upper_Arm/Lower_Arm
-    - root/Hips/Spine/Chest/Upper_Chest/Shoulder/Upper_Arm/Lower_Arm/Hand
-    - root/Hips/Spine/Chest/Upper_Chest/Shoulder1/Upper_Arm 1
-    - root/Hips/Spine/Chest/Upper_Chest/Shoulder1/Upper_Arm 1/Lower_Arm 1
-    - root/Hips/Spine/Chest/Upper_Chest/Shoulder1/Upper_Arm 1/Lower_Arm 1/Hand 1
-    - root/Hips/Upper_Leg/Lower_Leg
-    - root/Hips/Upper_Leg/Lower_Leg/Foot
-    - root/Hips/Upper_Leg/Lower_Leg/Foot/Toes
-    - root/Hips/Upper_Leg1
-    - root/Hips/Upper_Leg1/Lower_Leg 1
-    - root/Hips/Upper_Leg1/Lower_Leg 1/Foot 1
-    - root/Hips/Upper_Leg1/Lower_Leg 1/Foot 1/Toes 1
-    - root/Hips/Upper_Leg
+    extraExposedTransformPaths: []
     clipAnimations: []
     isReadable: 1
   meshes:
