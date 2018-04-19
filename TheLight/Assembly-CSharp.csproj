@@ -49,6 +49,7 @@
      <Compile Include="Assets\Database Control Free\Demos\C#\Scripts\DCF_DemoScene_ManagerScript_CSharp.cs" />
      <Compile Include="Assets\HostGame.cs" />
      <Compile Include="Assets\JoinGame.cs" />
+     <Compile Include="Assets\LoginMenu.cs" />
      <Compile Include="Assets\Particles\ElectricOrb\CircSpawner.cs" />
      <Compile Include="Assets\Particles\ElectricOrb\Spawner.cs" />
      <Compile Include="Assets\PauseMenu.cs" />
@@ -114,6 +115,8 @@
      <Compile Include="Assets\Scripts\Util.cs" />
      <Compile Include="Assets\Scripts\WeaponGraphics.cs" />
      <Compile Include="Assets\Scripts\WeaponManager.cs" />
+     <Compile Include="Assets\UserAccountManager.cs" />
+     <Compile Include="Assets\UserAccount_Lobby.cs" />
      <None Include="Assets\Database Control Free\Demos\UnityScript\Readme.txt" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
