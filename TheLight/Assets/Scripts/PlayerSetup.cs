@@ -15,14 +15,13 @@ public class PlayerSetup : NetworkBehaviour {
 
     [SerializeField]
     GameObject playerUIPrefab;
-    private GameObject playerUIInstance;
+    [HideInInspector]
+    public GameObject playerUIInstance;
 
     [SerializeField]
     private SkinnedMeshRenderer skinned; // cast shadows only for skinned mesh
     [SerializeField]
     private SkinnedMeshRenderer skinned2; // cast shadows only for skinned mesh
-
-    Camera sceneCamera;
 
     void Start()
     {
@@ -33,12 +32,6 @@ public class PlayerSetup : NetworkBehaviour {
         }
         else
         {
-            sceneCamera = Camera.main;
-            if (sceneCamera != null)
-            {
-                sceneCamera.gameObject.SetActive(false);
-            }
-
             // Create PlayerUI
             playerUIInstance = Instantiate(playerUIPrefab);
             playerUIInstance.name = playerUIPrefab.name;
@@ -52,9 +45,11 @@ public class PlayerSetup : NetworkBehaviour {
             skinned.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
             skinned2.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
 
+            GetComponent<Player>().SetupPlayer();
+
         }
 
-        GetComponent<Player>().Setup();
+        //GetComponent<Player>().Setup();
         GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
     }
 
@@ -99,10 +94,8 @@ public class PlayerSetup : NetworkBehaviour {
     {
         Destroy(playerUIInstance);
 
-        if(sceneCamera != null)
-        {
-            sceneCamera.gameObject.SetActive(true);
-        }
+        if(isLocalPlayer)
+            GameManager.instance.SetSceneCameraActive(true);
 
         GameManager.UnRegisterPlayer(transform.name);
     }
