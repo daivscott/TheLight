@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 87e6bba8b3ae86e4da9c84f6d832e37d
+labels:
+- Character
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -5996,8 +5998,8 @@ ModelImporter:
     - serializedVersion: 16
       name: HiddenButton
       takeName: HiddenButton
-      firstFrame: 0
-      lastFrame: 225
+      firstFrame: 118
+      lastFrame: 130
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

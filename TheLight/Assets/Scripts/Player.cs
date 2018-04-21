@@ -64,10 +64,11 @@ public class Player : NetworkBehaviour {
 
     public GameObject lightPrefab;
 
-    //public Animator anim;
+    NetworkAnimator anim;
 
     void Start()
     {
+        anim = GetComponent<NetworkAnimator>();
         audioSource = GetComponent<AudioSource>();
         audioSource2 = GetComponent<AudioSource>();
     }
@@ -138,8 +139,11 @@ public class Player : NetworkBehaviour {
             return;
         }
 
+        anim.animator.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
+        anim.animator.SetFloat("Vertical", Input.GetAxis("Vertical"));
+
         // Test function to cause damage
-        if(Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K))
         {
             RpcTakeDamage(50, transform.name);
         }
