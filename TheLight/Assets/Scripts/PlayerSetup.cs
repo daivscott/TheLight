@@ -20,8 +20,8 @@ public class PlayerSetup : NetworkBehaviour {
 
     [SerializeField]
     private SkinnedMeshRenderer skinned; // cast shadows only for skinned mesh
-    [SerializeField]
-    private SkinnedMeshRenderer skinned2; // cast shadows only for skinned mesh
+    //[SerializeField]
+   // private SkinnedMeshRenderer skinned2; // cast shadows only for skinned mesh
 
     void Start()
     {
@@ -43,18 +43,21 @@ public class PlayerSetup : NetworkBehaviour {
             ui.SetPlayer(GetComponent<Player>());
 
             skinned.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
-            skinned2.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
+            //skinned2.shadowCastingMode = ShadowCastingMode.ShadowsOnly;
 
             GetComponent<Player>().SetupPlayer();
 
         }
 
         //GetComponent<Player>().Setup();
+
+        // start the animator sending on the host
         GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
     }
 
     public override void PreStartClient()
     {
+        // start the animator sending on the client
         GetComponent<NetworkAnimator>().SetParameterAutoSend(0, true);
     }
 
